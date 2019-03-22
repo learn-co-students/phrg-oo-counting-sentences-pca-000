@@ -17,15 +17,7 @@ class String
   def count_sentences
     count = []
     if self.length > 2
-      if self.include?(".")
         count = self.split(/\. |\? |\! |\."|\?"|\!"/)
-      elsif self.include?("?")
-        count = self.split(/\. |\? |\! |\."|\?"|\!"/)
-      elsif self.include?("!")
-        count = self.split(/\. |\? |\! |\."|\?"|\!"/)
-      else
-        count = []
-      end
     end
   count.length
   end
